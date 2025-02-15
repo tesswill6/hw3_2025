@@ -11,12 +11,12 @@ nav a:hover, nav a:focus{
 .skip{
      position: absolute;
      top: -40px;
-     display: none;
+     visibility: hidden;
 }
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip:focus{
      top: 20px;
-     display: visible;
+     visibility: visible;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -34,12 +34,9 @@ nav a:hover, nav a:focus{
 
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
-.container div:first-child {
+.container div:first-child{
      grid-column: 1/-1;
-     background-image: url('/images/header.jpg');
-     background-size: cover;
-     background-position: center;
-     height: 300px; /* Adjust as needed */
+     background-image: url('../images/header.jpg');
  }
 
 
